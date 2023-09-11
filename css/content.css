@@ -1,0 +1,86 @@
+main {
+    width: 66.66666667%;
+    border-left: 2px solid black;
+}
+
+.add-new {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.add-new button {
+    font-size: 1.5rem;
+    background: none;
+    border: 0px solid rgba(0, 0, 0, 0.6);
+    color: white;
+
+    padding-top: 0.215rem 0.575rem 0.425rem 0.5rem;
+    margin-bottom: 0.75rem;
+
+    position: relative;
+        bottom: 0.275rem;
+        right: -0.275rem;
+}
+
+.add-new button:hover,
+.add-new button:active {
+    background: rgb(55, 65, 81);
+}
+
+/* TITLES */
+
+h1 {
+    font-size: 2.25rem;
+    font-family: "Arial rounded MT bold", "Helvetica Rounded", Arial, sans-serif;
+    margin-top: -0.5rem;
+
+    display: none;
+}
+
+h1.today {
+    color: rgb(var(--color-today));
+    display: block;
+}
+
+h1.scheduled {
+    color: rgb(var(--color-scheduled));
+}
+
+h1.all {
+    color: rgb(var(--color-all));
+}
+
+h1.flagged {
+    color: rgb(var(--color-flagged));
+}
+
+/* TODOS */
+.todos li {
+    display: flex;
+    line-height: 0.1rem;
+}
+
+.todos p {
+    padding: 0.625rem 0;
+    border-bottom: 1px solid rgb(55, 65, 81);
+    flex-grow: 1;
+}
+.todos svg {
+    flex: none;
+
+    width: 2rem;
+    height: 2rem;
+
+    margin-top: 0.8em;
+    margin-right: 0.5rem;
+
+    stroke: rgb(28, 34, 43);
+    stroke-width: 1;
+    fill: rgb(55, 65, 81);
+
+    cursor: pointer;
+}
+.todos svg:hover,
+.todos svg:active {
+    fill: rgb(251, 191, 36);
+}
